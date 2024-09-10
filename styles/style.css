@@ -9,9 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block-start: 40px;
-  padding-inline-end: 53px;
-  margin-block-end: 18%;
+  padding-block-start: 27px;
+  margin-block-end: 84px;
   
   & .header__logo {
     width: 47px;
@@ -84,9 +83,116 @@
     & .header__btn.active {
       border-radius: 50px;
       padding: 15px 20px;
-      background-color: #edf2f6;
+      background-color: var(--background-light);
       font-weight: 600;
       color: var(--accent-color);
+    }
+  }
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 26%;
+
+  @media (width <= 500px) {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  & .introduction__info-box {
+
+    & .introduction__text {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 68px;
+      line-height: 99%;
+      color: var(--main-font);
+      margin-block-end: 14px;
+  
+      & .introduction__text-accent {
+        color: var(--accent-color);
+      }
+    }
+
+    & .introduction__description {
+      width: 482px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: var(--main-font);
+      margin-block-end: 22px;
+    }
+
+    & .introduction__btn-box {
+      margin-block-end: 30px;
+
+      & .introduction__btn {
+        border-radius: 60px;
+        padding: 18px 40px;
+        background-color: var(--background-light);
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--main-font);
+      }
+
+      & .introduction__btn.active {
+        background-color: var(--accent-color);
+        color: var(--secondary-font);
+        padding: 18px 24px;
+      }
+    }
+
+    & .introduction__info-box_rating {
+      display: flex;
+      align-items: center;
+
+      & .introduction__info-box_rating_stars {
+        width: 130px;
+        display: flex;
+        justify-content: space-around;
+        margin-inline-end: 5px;
+      }
+    }
+  }
+
+  & .introduction__image-box {
+    position: relative;
+    width: 469px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    & .introduction__image-box_label {
+      position: absolute;
+      top: 29px;
+      left: 29px;
+
+      & p:first-of-type {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: rgba(235, 235, 235, 0.6);
+        margin-block-end: 3px;
+      }
+
+      & p {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 148%;
+        color: rgba(255, 255, 255, 0.8);
+      }
     }
   }
 }
