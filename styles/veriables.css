@@ -1,0 +1,10 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'ABCNormal', sans-serif;
+  --third-family: 'ABC Whyte Inktrap Unlicensed Trial', sans-serif;
+
+	--main-font: #000;
+	--main-font-light: #6b6a6e;
+	--secondary-font: #fff;
+	--accent-color: #234ef6;
+}
